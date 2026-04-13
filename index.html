@@ -14,24 +14,24 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --white:#ffffff;
-  --bg:#f8f9fc;
-  --bg2:#f0f4f9;
-  --card:#ffffff;
-  --accent:#1d6fd4;
-  --accent-light:#e8f1fb;
-  --accent-mid:#3b82f6;
-  --text:#1a2233;
-  --muted:#64748b;
-  --border:#e2e8f0;
-  --shadow:0 2px 16px rgba(30,60,120,0.08);
-  --shadow-md:0 4px 24px rgba(30,60,120,0.12);
+  --bg:#0a1020;
+  --bg2:#131c34;
+  --card:#101a2f;
+  --accent:#2f7ff0;
+  --accent-light:#1a2a4a;
+  --accent-mid:#5da0ff;
+  --text:#e8eefc;
+  --muted:#9fb0d1;
+  --border:#24324f;
+  --shadow:0 8px 30px rgba(2,8,24,0.45);
+  --shadow-md:0 16px 48px rgba(2,8,24,0.55);
 }
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.65;font-size:16px}
 a{color:inherit;text-decoration:none}
 
 /* ── NAV ── */
-header{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(255,255,255,0.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);box-shadow:0 1px 8px rgba(30,60,120,0.06)}
+header{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(10,16,32,0.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);box-shadow:0 1px 8px rgba(2,8,24,0.4)}
 .nav-inner{max-width:1160px;margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .logo{display:flex;align-items:center;gap:10px}
 .logo-icon{width:38px;height:38px;background:var(--accent);border-radius:9px;display:flex;align-items:center;justify-content:center}
@@ -43,17 +43,22 @@ header{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(255,255,2
 .nav-links a:hover{color:var(--accent)}
 .nav-cta{background:var(--accent);color:#fff;padding:10px 22px;border-radius:8px;font-size:0.875rem;font-weight:600;transition:background .2s,transform .15s;white-space:nowrap}
 .nav-cta:hover{background:#155bb5;transform:translateY(-1px)}
+
+.lang-switch{display:flex;align-items:center;gap:8px;background:var(--accent-light);border:1px solid var(--border);padding:6px;border-radius:999px}
+.lang-btn{border:none;background:transparent;color:var(--muted);font-size:0.78rem;font-weight:600;padding:6px 10px;border-radius:999px;cursor:pointer;transition:all .2s}
+.lang-btn.active{background:var(--accent);color:#fff}
+
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;border:none;background:none}
 .hamburger span{display:block;width:22px;height:2px;background:var(--muted);border-radius:2px;transition:transform .25s,opacity .25s}
 .hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 .hamburger.open span:nth-child(2){opacity:0}
 .hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-.mobile-nav{display:none;flex-direction:column;background:#fff;border-bottom:1px solid var(--border);padding:14px 24px 18px}
+.mobile-nav{display:none;flex-direction:column;background:#0f1830;border-bottom:1px solid var(--border);padding:14px 24px 18px}
 .mobile-nav a{color:var(--muted);font-size:0.975rem;padding:10px 0;border-bottom:1px solid var(--border);display:block}
 .mobile-nav .nav-cta{margin-top:12px;text-align:center;border:none}
 
 /* ── HERO ── */
-.hero{min-height:100vh;display:flex;align-items:center;padding:110px 24px 80px;background:linear-gradient(160deg,#f0f5ff 0%,#e8f1fb 40%,#f8f9fc 100%);position:relative;overflow:hidden}
+.hero{min-height:100vh;display:flex;align-items:center;padding:110px 24px 80px;background:linear-gradient(160deg,#0a1020 0%,#101a31 45%,#0c1428 100%);position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;top:-100px;right:-120px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(29,111,212,0.08) 0%,transparent 70%);pointer-events:none}
 .hero::after{content:'';position:absolute;bottom:-80px;left:-80px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(59,130,246,0.06) 0%,transparent 70%);pointer-events:none}
 .hero-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;width:100%}
@@ -70,7 +75,7 @@ h1 span{color:var(--accent)}
 .btn-outline{background:transparent;border:1.5px solid var(--accent);color:var(--accent);box-shadow:none}
 .btn-outline:hover{background:var(--accent-light);box-shadow:none;transform:translateY(-1px)}
 .hero-visual{position:relative;z-index:1}
-.hero-card-main{background:#fff;border-radius:16px;box-shadow:var(--shadow-md);overflow:hidden;border:1px solid var(--border)}
+.hero-card-main{background:#111b33;border-radius:16px;box-shadow:var(--shadow-md);overflow:hidden;border:1px solid var(--border)}
 .hero-img-placeholder{height:280px;background:linear-gradient(135deg,#1d6fd4 0%,#3b82f6 60%,#60a5fa 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px}
 .hero-img-placeholder svg{width:64px;height:64px;stroke:rgba(255,255,255,0.6);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
 .hero-img-placeholder p{color:rgba(255,255,255,0.6);font-size:0.82rem}
@@ -88,8 +93,8 @@ section{padding:80px 24px}
 .sec-tag{font-size:0.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
 h2{font-family:'Outfit',sans-serif;font-size:clamp(1.7rem,3vw,2.2rem);font-weight:700;line-height:1.2;margin-bottom:14px;color:var(--text)}
 .sec-sub{color:var(--muted);max-width:520px;font-size:0.975rem;line-height:1.75;margin-bottom:48px}
-.bg-white{background:#fff}
-.bg-light{background:var(--bg)}
+.bg-white{background:#0d162b}
+.bg-light{background:#0a1020}
 .bg-blue{background:linear-gradient(135deg,#1d4ed8 0%,#1d6fd4 100%)}
 
 /* ── ABOUT ── */
@@ -106,7 +111,7 @@ h2{font-family:'Outfit',sans-serif;font-size:clamp(1.7rem,3vw,2.2rem);font-weigh
 
 /* ── SERVICES ── */
 .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.svc{background:#fff;border:1px solid var(--border);border-radius:14px;padding:28px;box-shadow:var(--shadow);transition:box-shadow .2s,transform .2s,border-color .2s;position:relative;overflow:hidden}
+.svc{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px;box-shadow:var(--shadow);transition:box-shadow .2s,transform .2s,border-color .2s;position:relative;overflow:hidden}
 .svc:hover{box-shadow:var(--shadow-md);transform:translateY(-4px);border-color:rgba(29,111,212,0.25)}
 .svc-top{width:50px;height:50px;background:var(--accent-light);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
 .svc-top svg{width:24px;height:24px;stroke:var(--accent);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
@@ -123,7 +128,7 @@ h2{font-family:'Outfit',sans-serif;font-size:clamp(1.7rem,3vw,2.2rem);font-weigh
 
 /* ── WHY ── */
 .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
-.why-card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:28px 24px;text-align:center;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s}
+.why-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px 24px;text-align:center;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s}
 .why-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}
 .why-icon{width:54px;height:54px;background:var(--accent-light);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
 .why-icon svg{width:24px;height:24px;stroke:var(--accent);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
@@ -132,7 +137,7 @@ h2{font-family:'Outfit',sans-serif;font-size:clamp(1.7rem,3vw,2.2rem);font-weigh
 
 /* ── GALLERY ── */
 .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.gallery-item{border-radius:14px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--border);background:#fff;transition:transform .2s,box-shadow .2s}
+.gallery-item{border-radius:14px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--border);background:var(--card);transition:transform .2s,box-shadow .2s}
 .gallery-item:hover{transform:translateY(-4px);box-shadow:var(--shadow-md)}
 .gallery-img{height:200px;background:linear-gradient(135deg,#e8f1fb,#d1e3f8);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;position:relative;overflow:hidden}
 .gallery-img.has-photo{padding:0}
@@ -146,7 +151,7 @@ h2{font-family:'Outfit',sans-serif;font-size:clamp(1.7rem,3vw,2.2rem);font-weigh
 /* ── SERVICE AREAS ── */
 .areas-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
 .area-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
-.area-item{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--border);border-radius:10px;padding:12px 16px;font-size:0.875rem;color:var(--text);box-shadow:var(--shadow)}
+.area-item{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 16px;font-size:0.875rem;color:var(--text);box-shadow:var(--shadow)}
 .area-icon{width:8px;height:8px;border-radius:50%;background:var(--accent);min-width:8px}
 .map-embed{border-radius:14px;overflow:hidden;box-shadow:var(--shadow-md);border:1px solid var(--border);height:340px;background:var(--bg2);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px}
 .map-embed svg{width:44px;height:44px;stroke:var(--accent);fill:none;stroke-width:1.5;opacity:.5}
@@ -166,14 +171,14 @@ h2{font-family:'Outfit',sans-serif;font-size:clamp(1.7rem,3vw,2.2rem);font-weigh
 .hours-box{background:var(--accent-light);border:1px solid rgba(29,111,212,0.15);border-radius:12px;padding:18px 20px;margin-top:24px}
 .hours-box h4{font-size:0.85rem;font-weight:700;color:var(--accent);margin-bottom:10px}
 .hours-box p{font-size:0.825rem;color:var(--muted);margin-bottom:4px}
-.form-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:32px;box-shadow:var(--shadow)}
+.form-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:32px;box-shadow:var(--shadow)}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .field{margin-bottom:16px}
 .field label{display:block;font-size:0.78rem;font-weight:600;color:var(--muted);margin-bottom:6px;letter-spacing:.03em;text-transform:uppercase}
-.field input,.field select,.field textarea{width:100%;background:var(--bg);border:1.5px solid var(--border);border-radius:8px;color:var(--text);padding:11px 14px;font-size:0.9rem;font-family:'Inter',sans-serif;transition:border-color .2s;outline:none}
-.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--accent);background:#fff}
+.field input,.field select,.field textarea{width:100%;background:#0b1328;border:1.5px solid var(--border);border-radius:8px;color:var(--text);padding:11px 14px;font-size:0.9rem;font-family:'Inter',sans-serif;transition:border-color .2s;outline:none}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--accent);background:#121d35}
 .field textarea{resize:vertical;min-height:110px}
-.field select option{background:#fff}
+.field select option{background:#121d35}
 .form-submit{width:100%;background:var(--accent);color:#fff;border:none;border-radius:9px;padding:14px;font-size:0.975rem;font-weight:600;cursor:pointer;font-family:'Outfit',sans-serif;transition:background .2s,transform .15s;box-shadow:0 4px 16px rgba(29,111,212,0.22)}
 .form-submit:hover{background:#155bb5;transform:translateY(-1px)}
 .form-success{display:none;text-align:center;padding:36px 16px}
@@ -244,7 +249,11 @@ footer{background:var(--text);color:#e2e8f0;padding:48px 24px 28px}
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <a href="#contact" class="nav-cta">Request a Quote</a>
+    <div class="lang-switch" aria-label="Language switcher">
+      <button class="lang-btn active" data-lang-btn="en">EN</button>
+      <button class="lang-btn" data-lang-btn="el">ΕΛ</button>
+    </div>
+    <a href="#contact" class="nav-cta" data-i18n="nav.quote">Request a Quote</a>
     <button class="hamburger" id="ham" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
@@ -255,7 +264,11 @@ footer{background:var(--text);color:#e2e8f0;padding:48px 24px 28px}
     <a href="#gallery">Projects</a>
     <a href="#areas">Areas</a>
     <a href="#contact">Contact</a>
-    <a href="#contact" class="nav-cta">Request a Quote</a>
+    <a href="#contact" class="nav-cta" data-i18n="nav.quote">Request a Quote</a>
+      <div class="lang-switch" style="margin-top:12px;width:max-content">
+      <button class="lang-btn active" data-lang-btn="en">EN</button>
+      <button class="lang-btn" data-lang-btn="el">ΕΛ</button>
+    </div>
   </div>
 </header>
 
@@ -356,14 +369,14 @@ footer{background:var(--text);color:#e2e8f0;padding:48px 24px 28px}
       <div class="svc fade">
         <div class="svc-top"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
         <h3>Technical Support & Maintenance</h3>
-        <p>Regular maintenance contracts, fault diagnosis, system upgrades, and emergency call-out. We support everything we install — and we're available when you need us.</p>
+        <p>Regular maintenance contracts, fault diagnosis, system upgrades, and emergency call-out. We support everything we install — and we\'re available when you need us.</p>
         <span class="svc-tag">Ongoing Support</span>
       </div>
     </div>
     <div class="mid-cta fade">
       <div>
         <h3>Not sure what you need?</h3>
-        <p>We'll visit your site, assess your requirements, and recommend the right solution — with no obligation and honest advice.</p>
+        <p>We\'ll visit your site, assess your requirements, and recommend the right solution — with no obligation and honest advice.</p>
       </div>
       <a href="#contact" class="btn btn-white">Book a Free Assessment</a>
     </div>
@@ -375,7 +388,7 @@ footer{background:var(--text);color:#e2e8f0;padding:48px 24px 28px}
   <div class="wrap">
     <div class="sec-tag fade">Why Choose Us</div>
     <h2 class="fade">What sets us apart</h2>
-    <p class="sec-sub fade">We combine technical expertise with a personal, reliable service that larger companies simply can't offer.</p>
+    <p class="sec-sub fade">We combine technical expertise with a personal, reliable service that larger companies simply can\'t offer.</p>
     <div class="why-grid">
       <div class="why-card fade">
         <div class="why-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
@@ -390,7 +403,7 @@ footer{background:var(--text);color:#e2e8f0;padding:48px 24px 28px}
       <div class="why-card fade">
         <div class="why-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
         <h4>Fast Response</h4>
-        <p>Quick response times for both new installations and support calls — we understand that security can't wait.</p>
+        <p>Quick response times for both new installations and support calls — we understand that security can\'t wait.</p>
       </div>
       <div class="why-card fade">
         <div class="why-icon"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
@@ -478,7 +491,7 @@ footer{background:var(--text);color:#e2e8f0;padding:48px 24px 28px}
       <div class="fade">
         <div class="sec-tag">Where We Work</div>
         <h2>Service Areas</h2>
-        <p style="color:var(--muted);font-size:.975rem;line-height:1.8;margin-bottom:20px">Based in Tympaki, we serve clients across Heraklion and the wider Crete region. Whether you're in the centre of Heraklion or a more remote location, we'll come to you.</p>
+        <p style="color:var(--muted);font-size:.975rem;line-height:1.8;margin-bottom:20px">Based in Tympaki, we serve clients across Heraklion and the wider Crete region. Whether you\'re in the centre of Heraklion or a more remote location, we\'ll come to you.</p>
         <div class="area-list">
           <div class="area-item"><div class="area-icon"></div>Tympaki (base)</div>
           <div class="area-item"><div class="area-icon"></div>Heraklion</div>
@@ -506,7 +519,7 @@ footer{background:var(--text);color:#e2e8f0;padding:48px 24px 28px}
       <div class="fade">
         <div class="sec-tag">Get in Touch</div>
         <h2>Let's discuss your project</h2>
-        <p>Whether you need a new installation, a system upgrade, or ongoing maintenance — we're happy to advise and provide a no-obligation quote.</p>
+        <p>Whether you need a new installation, a system upgrade, or ongoing maintenance — we\'re happy to advise and provide a no-obligation quote.</p>
         <div class="cinfo-item">
           <div class="cinfo-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.16 12 19.79 19.79 0 0 1 1.07 3.4 2 2 0 0 1 3.05 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 5.8 5.8l1.28-1.28a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
           <div><div class="cinfo-label">Phone</div><div class="cinfo-val">+30 XXX XXX XXXX</div></div>
@@ -554,7 +567,7 @@ footer{background:var(--text);color:#e2e8f0;padding:48px 24px 28px}
           <div class="form-success" id="form-success">
             <div class="tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
             <h3>Enquiry received!</h3>
-            <p>Thank you for getting in touch. We'll respond within one business day.</p>
+            <p>Thank you for getting in touch. We\'ll respond within one business day.</p>
           </div>
         </div>
       </div>
@@ -616,6 +629,133 @@ document.getElementById('submit-btn').addEventListener('click', () => {
   document.getElementById('form-wrap').style.display = 'none';
   document.getElementById('form-success').style.display = 'block';
 });
+
+const i18n = {
+  en: {
+    title: 'Ac-Dc Security Systems | Tympaki, Heraklion, Crete',
+    nav: ['About','Services','Projects','Areas','Contact'],
+    quote: 'Request a Quote',
+    heroBadge: 'Based in Tympaki, Crete',
+    heroTitle: 'Your security,<br><span>our expertise.</span>',
+    heroSub: 'Professional security systems, CCTV, access control, and technical solutions for homes and businesses across Crete. Installed right. Supported long-term.',
+    heroBtns: ['Request a Quote','View Services'],
+    stats: ['Projects','Years','Wide'],
+    heroCard: ['Complete Security Solutions','Tympaki · Heraklion · All of Crete'],
+    secTags: ['Who We Are','What We Do','Why Choose Us','Our Work','Where We Work','Get in Touch'],
+    h2s: ['Local experts you can rely on','Our Services','What sets us apart','Projects & Gallery','Service Areas',"Let's discuss your project"],
+    about: [
+      'Ac-Dc Security Systems is a professional security and technology company based in Tympaki, Heraklion, Crete. We specialise in designing, installing, and maintaining complete security solutions for residential and commercial clients.',
+      'With years of hands-on experience across Crete, we combine technical expertise with a genuine commitment to quality. Every system we install is tailored to the specific needs of the site — no off-the-shelf solutions, no shortcuts.',
+      'From a single camera to a full building fit-out, we handle the entire project ourselves — from initial assessment through to long-term support.'
+    ],
+    chips: ['In-house team','Based in Crete','Licensed & certified','Ongoing support'],
+    servicesSub: 'From alarm systems to structured networks — we provide complete, reliable security and low-voltage technical solutions across Crete.',
+    cta: ['Not sure what you need?','We\'ll visit your site, assess your requirements, and recommend the right solution — with no obligation and honest advice.','Book a Free Assessment'],
+    whySub: "We combine technical expertise with a personal, reliable service that larger companies simply can\'t offer.",
+    gallerySub: 'A selection of completed installations. Real photos from real projects — replace placeholders with your own images.',
+    areasText: 'Based in Tympaki, we serve clients across Heraklion and the wider Crete region. Whether you\'re in the centre of Heraklion or a more remote location, we\'ll come to you.',
+    areas: ['Tympaki (base)','Heraklion','Mires','Agia Varvara','Matala','Rethymno','Messara Valley','All of Crete'],
+    map: 'View on Google Maps →',
+    contactText: 'Whether you need a new installation, a system upgrade, or ongoing maintenance — we\'re happy to advise and provide a no-obligation quote.',
+    hours: ['Working Hours','Monday – Friday: 08:00 – 18:00','Saturday: 09:00 – 14:00','Emergency support available outside hours'],
+    formLabels: ['First Name','Last Name','Phone','Email','Service Required','Tell us about your project'],
+    placeholders: ['Giorgos','Papadakis','+30 6XX XXX XXXX','your@email.com','Select a service...','Property type, location, what you need, any questions...'],
+    options: ['Alarm System','CCTV / Security Cameras','Access Control','Intercom System','Network & Cabling','Technical Support / Maintenance','Not sure yet'],
+    submit: 'Send Enquiry',
+    success: ['Enquiry received!','Thank you for getting in touch. We\'ll respond within one business day.'],
+    footer: ['Professional security systems, CCTV, access control, and technical solutions across Crete, Greece. Based in Tympaki, Heraklion.','Services','Contact','CCTV & Cameras','Networks & Cabling','Technical Support','Tympaki, Heraklion, Crete, Greece']
+  },
+  el: {
+    title: 'Ac-Dc Security Systems | Τυμπάκι, Ηράκλειο, Κρήτη',
+    nav: ['Σχετικά','Υπηρεσίες','Έργα','Περιοχές','Επικοινωνία'],
+    quote: 'Ζητήστε Προσφορά',
+    heroBadge: 'Με έδρα το Τυμπάκι, Κρήτη',
+    heroTitle: 'Η ασφάλειά σας,<br><span>η εξειδίκευσή μας.</span>',
+    heroSub: 'Επαγγελματικά συστήματα ασφαλείας, CCTV, έλεγχος πρόσβασης και τεχνικές λύσεις για σπίτια και επιχειρήσεις σε όλη την Κρήτη. Σωστή εγκατάσταση και μακροχρόνια υποστήριξη.',
+    heroBtns: ['Ζητήστε Προσφορά','Δείτε Υπηρεσίες'],
+    stats: ['Έργα','Χρόνια','Κάλυψη'],
+    heroCard: ['Ολοκληρωμένες Λύσεις Ασφαλείας','Τυμπάκι · Ηράκλειο · Όλη η Κρήτη'],
+    secTags: ['Ποιοι Είμαστε','Τι Κάνουμε','Γιατί Εμάς','Η Δουλειά μας','Πού Εργαζόμαστε','Επικοινωνήστε'],
+    h2s: ['Τοπικοί ειδικοί που μπορείτε να εμπιστευτείτε','Οι Υπηρεσίες μας','Τι μας ξεχωρίζει','Έργα & Φωτογραφίες','Περιοχές Εξυπηρέτησης','Ας συζητήσουμε το έργο σας'],
+    about: [
+      'Η Ac-Dc Security Systems είναι επαγγελματική εταιρεία ασφαλείας και τεχνολογίας με έδρα το Τυμπάκι, Ηράκλειο, Κρήτη. Εξειδικευόμαστε στη μελέτη, εγκατάσταση και συντήρηση ολοκληρωμένων λύσεων ασφαλείας για κατοικίες και επιχειρήσεις.',
+      'Με πολυετή πρακτική εμπειρία σε όλη την Κρήτη, συνδυάζουμε τεχνική γνώση με πραγματική προσήλωση στην ποιότητα. Κάθε σύστημα προσαρμόζεται στις ανάγκες του χώρου — χωρίς έτοιμες λύσεις και χωρίς εκπτώσεις.',
+      'Από μία κάμερα έως πλήρη εγκατάσταση κτιρίου, αναλαμβάνουμε το έργο από την αρχική εκτίμηση έως και τη μακροχρόνια υποστήριξη.'
+    ],
+    chips: ['Εσωτερική ομάδα','Με έδρα στην Κρήτη','Αδειοδοτημένοι & πιστοποιημένοι','Συνεχής υποστήριξη'],
+    servicesSub: 'Από συναγερμούς έως δομημένα δίκτυα — προσφέρουμε ολοκληρωμένες και αξιόπιστες λύσεις ασφαλείας και ασθενών ρευμάτων σε όλη την Κρήτη.',
+    cta: ['Δεν είστε σίγουροι τι χρειάζεστε;','Ερχόμαστε στον χώρο σας, αξιολογούμε τις ανάγκες σας και προτείνουμε τη σωστή λύση με ειλικρινή καθοδήγηση και χωρίς δέσμευση.','Κλείστε Δωρεάν Εκτίμηση'],
+    whySub: 'Συνδυάζουμε τεχνική εξειδίκευση με προσωπική και αξιόπιστη εξυπηρέτηση που οι μεγάλες εταιρείες δύσκολα προσφέρουν.',
+    gallerySub: 'Επιλεγμένα ολοκληρωμένα έργα. Πραγματικές φωτογραφίες από πραγματικές εγκαταστάσεις.',
+    areasText: 'Με έδρα το Τυμπάκι, εξυπηρετούμε πελάτες σε όλο το Ηράκλειο και την ευρύτερη Κρήτη. Είτε βρίσκεστε στο κέντρο είτε σε απομακρυσμένη περιοχή, ερχόμαστε εμείς σε εσάς.',
+    areas: ['Τυμπάκι (έδρα)','Ηράκλειο','Μοίρες','Αγία Βαρβάρα','Μάταλα','Ρέθυμνο','Μεσσαρά','Όλη η Κρήτη'],
+    map: 'Δείτε στο Google Maps →',
+    contactText: 'Είτε χρειάζεστε νέα εγκατάσταση, αναβάθμιση συστήματος ή συνεχή συντήρηση, είμαστε εδώ για να σας προτείνουμε την κατάλληλη λύση και να σας δώσουμε προσφορά χωρίς δέσμευση.',
+    hours: ['Ώρες Λειτουργίας','Δευτέρα – Παρασκευή: 08:00 – 18:00','Σάββατο: 09:00 – 14:00','Διαθέσιμη υποστήριξη έκτακτης ανάγκης εκτός ωραρίου'],
+    formLabels: ['Όνομα','Επώνυμο','Τηλέφωνο','Email','Υπηρεσία που χρειάζεστε','Περιγράψτε μας το έργο σας'],
+    placeholders: ['Γιώργος','Παπαδάκης','+30 6XX XXX XXXX','your@email.com','Επιλέξτε υπηρεσία...','Τύπος ακινήτου, τοποθεσία, ανάγκες και ερωτήσεις...'],
+    options: ['Σύστημα Συναγερμού','CCTV / Κάμερες Ασφαλείας','Έλεγχος Πρόσβασης','Θυροτηλεόραση / Intercom','Δίκτυο & Καλωδίωση','Τεχνική Υποστήριξη / Συντήρηση','Δεν είμαι σίγουρος ακόμη'],
+    submit: 'Αποστολή Αιτήματος',
+    success: ['Το αίτημα καταχωρήθηκε!','Ευχαριστούμε για την επικοινωνία. Θα απαντήσουμε εντός μίας εργάσιμης ημέρας.'],
+    footer: ['Επαγγελματικά συστήματα ασφαλείας, CCTV, έλεγχος πρόσβασης και τεχνικές λύσεις σε όλη την Κρήτη. Με έδρα το Τυμπάκι, Ηράκλειο.','Υπηρεσίες','Επικοινωνία','CCTV & Κάμερες','Δίκτυα & Καλωδίωση','Τεχνική Υποστήριξη','Τυμπάκι, Ηράκλειο, Κρήτη, Ελλάδα']
+  }
+};
+
+function setLang(lang){
+  const t = i18n[lang];
+  document.documentElement.lang = lang;
+  document.title = t.title;
+
+  document.querySelectorAll('.nav-links a, .mobile-nav a:not(.nav-cta)').forEach((el,i)=> el.textContent = t.nav[i]);
+  document.querySelectorAll('.nav-cta').forEach(el => el.textContent = t.quote);
+  document.querySelector('.hero-badge').innerHTML = '<span class="badge-dot"></span>' + t.heroBadge;
+  document.querySelector('h1').innerHTML = t.heroTitle;
+  document.querySelector('.hero-sub').textContent = t.heroSub;
+  document.querySelectorAll('.hero-btns .btn').forEach((el,i)=>el.textContent=t.heroBtns[i]);
+  document.querySelectorAll('.hstat-lbl').forEach((el,i)=>el.textContent=t.stats[i]);
+  document.querySelector('.hero-card-body h3').textContent = t.heroCard[0];
+  document.querySelector('.hero-card-body p').textContent = t.heroCard[1];
+
+  document.querySelectorAll('.sec-tag').forEach((el,i)=>el.textContent=t.secTags[i]);
+  document.querySelectorAll('section h2').forEach((el,i)=>el.textContent=t.h2s[i]);
+  document.querySelectorAll('#about .about-text p').forEach((el,i)=>el.textContent=t.about[i]);
+  document.querySelectorAll('.chip').forEach((el,i)=>el.lastChild.textContent=t.chips[i]);
+  document.querySelector('#services .sec-sub').textContent = t.servicesSub;
+  document.querySelector('.mid-cta h3').textContent = t.cta[0];
+  document.querySelector('.mid-cta p').textContent = t.cta[1];
+  document.querySelector('.mid-cta .btn').textContent = t.cta[2];
+  document.querySelector('#why .sec-sub').textContent = t.whySub;
+  document.querySelector('#gallery .sec-sub').textContent = t.gallerySub;
+  document.querySelector('#areas p[style]').textContent = t.areasText;
+  document.querySelectorAll('.area-item').forEach((el,i)=>{ el.childNodes[1].textContent = t.areas[i]; });
+  document.querySelector('.map-embed a').textContent = t.map;
+  document.querySelector('#contact .contact-grid > div:first-child > p').textContent = t.contactText;
+  document.querySelector('.hours-box h4').textContent = t.hours[0];
+  document.querySelectorAll('.hours-box p').forEach((el,i)=>el.textContent=t.hours[i+1]);
+
+  document.querySelectorAll('.field label').forEach((el,i)=>el.textContent=t.formLabels[i]);
+  const inputs = document.querySelectorAll('.field input, .field textarea');
+  inputs[0].placeholder=t.placeholders[0]; inputs[1].placeholder=t.placeholders[1]; inputs[2].placeholder=t.placeholders[2];
+  inputs[3].placeholder=t.placeholders[3]; inputs[4].placeholder=t.placeholders[5];
+  const select = document.querySelector('.field select');
+  select.options[0].textContent = t.placeholders[4];
+  for(let i=0;i<t.options.length;i++) select.options[i+1].textContent = t.options[i];
+  document.getElementById('submit-btn').textContent = t.submit;
+  document.querySelector('#form-success h3').textContent=t.success[0];
+  document.querySelector('#form-success p').textContent=t.success[1];
+
+  document.querySelector('.footer-brand p').textContent = t.footer[0];
+  document.querySelectorAll('.footer-col h4')[0].textContent = t.footer[1];
+  document.querySelectorAll('.footer-col h4')[1].textContent = t.footer[2];
+  document.querySelectorAll('.footer-col ul li a')[1].textContent=t.footer[3];
+  document.querySelectorAll('.footer-col ul li a')[4].textContent=t.footer[4];
+  document.querySelectorAll('.footer-col ul li a')[5].textContent=t.footer[5];
+  document.querySelector('.footer-bottom p:last-child').textContent=t.footer[6];
+
+  document.querySelectorAll('[data-lang-btn]').forEach(btn => btn.classList.toggle('active', btn.dataset.langBtn === lang));
+}
+
+document.querySelectorAll('[data-lang-btn]').forEach(btn => btn.addEventListener('click', ()=> setLang(btn.dataset.langBtn)));
 </script>
 </body>
 </html>
