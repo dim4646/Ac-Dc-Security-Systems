@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ac-Dc Security Systems — Professional alarm systems, CCTV, access control, intercom, and network solutions in Tympaki, Heraklion, Crete.">
+<meta property="og:title" content="Ac-Dc Security Systems | Tympaki, Crete">
+<meta property="og:description" content="Professional security systems, CCTV, access control and technical solutions in Crete, Greece.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://dim4646.github.io/Ac-Dc-Security-Systems/photo1.jpg">
+<title>Ac-Dc Security Systems | Tympaki, Heraklion, Crete</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#090e1a;
+  --bg2:#0d1526;
+  --bg3:#111b30;
+  --card:#0f1a2e;
+  --card2:#131f35;
+  --accent:#2d7cf6;
+  --accent-light:rgba(45,124,246,0.12);
+  --accent-mid:#3b82f6;
+  --text:#f0f4ff;
+  --muted:#7a8fb5;
+  --border:rgba(255,255,255,0.07);
+  --border2:rgba(45,124,246,0.25);
+  --shadow:0 2px 20px rgba(0,0,0,0.4);
+  --shadow-md:0 4px 32px rgba(0,0,0,0.5);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.65;font-size:16px}
+a{color:inherit;text-decoration:none}
+
+/* ── NAV ── */
+header{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(9,14,26,0.85);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);box-shadow:0 1px 12px rgba(0,0,0,0.4)}
+.nav-inner{max-width:1160px;margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:flex;align-items:center;gap:10px}
+.logo-icon{width:38px;height:38px;background:var(--accent);border-radius:9px;display:flex;align-items:center;justify-content:center}
+.logo-icon svg{width:20px;height:20px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.logo-text{font-family:'Outfit',sans-serif;font-size:1.1rem;font-weight:700;color:var(--text)}
+.logo-text span{color:var(--accent)}
+.nav-links{list-style:none;display:flex;gap:26px}
+.nav-links a{color:var(--muted);font-size:0.875rem;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--text)}
+.nav-right{display:flex;align-items:center;gap:14px}
+.lang-toggle{display:flex;background:var(--bg3);border:1px solid var(--border2);border-radius:100px;padding:3px;gap:2px}
+.lang-btn{background:none;border:none;color:var(--muted);font-size:0.78rem;font-weight:700;padding:5px 12px;border-radius:100px;cursor:pointer;transition:background .2s,color .2s;letter-spacing:.05em}
+.lang-btn.active{background:var(--accent);color:#fff}
+.nav-cta{background:var(--accent);color:#fff;padding:10px 22px;border-radius:8px;font-size:0.875rem;font-weight:600;transition:background .2s,transform .15s;white-space:nowrap}
+.nav-cta:hover{background:#1a63d6;transform:translateY(-1px)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;border:none;background:none}
+.hamburger span{display:block;width:22px;height:2px;background:var(--muted);border-radius:2px;transition:transform .25s,opacity .25s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-nav{display:none;flex-direction:column;background:var(--bg2);border-bottom:1px solid var(--border);padding:14px 24px 18px}
+.mobile-nav a{color:var(--muted);font-size:0.975rem;padding:10px 0;border-bottom:1px solid var(--border);display:block}
+.mobile-nav .nav-cta{margin-top:12px;text-align:center;border:none}
+.mobile-lang{display:flex;gap:10px;padding:12px 0;border-bottom:1px solid var(--border)}
+.mobile-lang .lang-btn{background:var(--bg3);border:1px solid var(--border2)}
+
+/* ── HERO ── */
+.hero{min-height:100vh;display:flex;align-items:center;padding:110px 24px 80px;background:var(--bg);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-80px;right:-100px;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(45,124,246,0.1) 0%,transparent 65%);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:-60px;left:-60px;width:450px;height:450px;border-radius:50%;background:radial-gradient(circle,rgba(45,124,246,0.06) 0%,transparent 65%);pointer-events:none}
+.hero-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;width:100%}
+.hero-content{position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--accent-light);color:var(--accent);font-size:0.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:7px 16px;border-radius:100px;margin-bottom:24px;border:1px solid var(--border2)}
+.badge-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+h1{font-family:'Outfit',sans-serif;font-size:clamp(2rem,4vw,3.4rem);font-weight:700;line-height:1.15;margin-bottom:20px;color:#fff;letter-spacing:-.01em}
+h1 span{color:var(--accent)}
+.hero-sub{color:var(--muted);font-size:1.05rem;line-height:1.8;margin-bottom:32px;max-width:480px}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;padding:13px 26px;border-radius:8px;font-weight:600;font-size:0.925rem;transition:background .2s,transform .15s,box-shadow .2s;box-shadow:0 4px 20px rgba(45,124,246,0.3)}
+.btn:hover{background:#1a63d6;transform:translateY(-2px);box-shadow:0 8px 28px rgba(45,124,246,0.4)}
+.btn-outline{background:transparent;border:1.5px solid rgba(45,124,246,0.5);color:var(--accent);box-shadow:none}
+.btn-outline:hover{background:var(--accent-light);box-shadow:none;transform:translateY(-1px)}
+.hero-visual{position:relative;z-index:1}
+.hero-card-main{background:var(--card);border-radius:16px;box-shadow:var(--shadow-md);overflow:hidden;border:1px solid var(--border)}
+.hero-img-placeholder{height:280px;background:linear-gradient(135deg,#1a3a6e 0%,#2d7cf6 60%,#60a5fa 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px}
+.hero-img-placeholder svg{width:64px;height:64px;stroke:rgba(255,255,255,0.5);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.hero-img-placeholder p{color:rgba(255,255,255,0.5);font-size:0.82rem}
+.hero-card-body{padding:20px 24px;background:var(--card)}
+.hero-card-body h3{font-family:'Outfit',sans-serif;font-size:1rem;font-weight:700;margin-bottom:4px;color:#fff}
+.hero-card-body p{font-size:0.82rem;color:var(--muted)}
+.hero-stats{display:flex;gap:0;margin-top:24px}
+.hstat{flex:1;text-align:center;padding:16px 8px;background:var(--card2);border-radius:10px;margin:0 5px;border:1px solid var(--border)}
+.hstat-num{font-family:'Outfit',sans-serif;font-size:1.5rem;font-weight:700;color:var(--accent)}
+.hstat-lbl{font-size:0.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+
+/* ── SECTIONS ── */
+section{padding:80px 24px}
+.wrap{max-width:1160px;margin:0 auto}
+.sec-tag{font-size:0.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+h2{font-family:'Outfit',sans-serif;font-size:clamp(1.7rem,3vw,2.2rem);font-weight:700;line-height:1.2;margin-bottom:14px;color:#fff}
+.sec-sub{color:var(--muted);max-width:520px;font-size:0.975rem;line-height:1.75;margin-bottom:48px}
+.bg-dark{background:var(--bg)}
+.bg-dark2{background:var(--bg2)}
+
+/* ── ABOUT ── */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about-img{border-radius:16px;overflow:hidden;box-shadow:var(--shadow-md);border:1px solid var(--border);background:linear-gradient(135deg,var(--bg3),var(--card));height:360px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px}
+.about-img svg{width:56px;height:56px;stroke:var(--accent);fill:none;stroke-width:1.5;opacity:.4}
+.about-img p{font-size:0.82rem;color:var(--muted)}
+.about-text p{color:var(--muted);margin-bottom:16px;font-size:0.975rem;line-height:1.8}
+.about-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.chip{display:inline-flex;align-items:center;gap:7px;background:var(--accent-light);color:var(--accent);font-size:0.825rem;font-weight:600;padding:7px 14px;border-radius:100px;border:1px solid var(--border2)}
+.chip svg{width:14px;height:14px;stroke:var(--accent);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+
+/* ── SERVICES ── */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.svc{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px;box-shadow:var(--shadow);transition:box-shadow .2s,transform .2s,border-color .2s}
+.svc:hover{box-shadow:var(--shadow-md);transform:translateY(-4px);border-color:var(--border2)}
+.svc-top{width:50px;height:50px;background:var(--accent-light);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.svc-top svg{width:24px;height:24px;stroke:var(--accent);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.svc h3{font-family:'Outfit',sans-serif;font-size:1.05rem;font-weight:700;margin-bottom:8px;color:#fff}
+.svc p{color:var(--muted);font-size:0.875rem;line-height:1.75}
+.svc-tag{display:inline-block;background:var(--bg3);color:var(--accent);font-size:0.72rem;font-weight:600;padding:4px 10px;border-radius:100px;margin-top:14px;border:1px solid var(--border2)}
+
+/* ── MID CTA ── */
+.mid-cta{background:linear-gradient(135deg,#0f2a6e 0%,#1a4fbe 100%);border-radius:18px;padding:52px 48px;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;margin-top:48px;border:1px solid rgba(45,124,246,0.2)}
+.mid-cta h3{font-family:'Outfit',sans-serif;font-size:1.6rem;font-weight:700;color:#fff;margin-bottom:8px}
+.mid-cta p{color:rgba(255,255,255,0.65);font-size:0.975rem;max-width:440px}
+.btn-white{background:#fff;color:var(--accent);box-shadow:0 4px 16px rgba(0,0,0,0.3)}
+.btn-white:hover{background:#e8f1fb;color:#1a4fbe}
+
+/* ── WHY ── */
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.why-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px 24px;text-align:center;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s,border-color .2s}
+.why-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:var(--border2)}
+.why-icon{width:54px;height:54px;background:var(--accent-light);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+.why-icon svg{width:24px;height:24px;stroke:var(--accent);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.why-card h4{font-family:'Outfit',sans-serif;font-size:0.975rem;font-weight:700;margin-bottom:8px;color:#fff}
+.why-card p{font-size:0.845rem;color:var(--muted);line-height:1.6}
+
+/* ── GALLERY ── */
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.gallery-item{border-radius:14px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--border);background:var(--card);transition:transform .2s,box-shadow .2s,border-color .2s}
+.gallery-item:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--border2)}
+.gallery-img{height:200px;background:var(--bg3);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;position:relative;overflow:hidden}
+.gallery-img.has-photo{padding:0}
+.gallery-img.has-photo img{width:100%;height:100%;object-fit:cover}
+.gallery-img svg{width:40px;height:40px;stroke:var(--accent);fill:none;stroke-width:1.5;opacity:.4}
+.gallery-img p{font-size:0.78rem;color:var(--muted)}
+.gallery-caption{padding:16px 18px}
+.gallery-caption h4{font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:700;color:#fff;margin-bottom:4px}
+.gallery-caption p{font-size:0.8rem;color:var(--muted);line-height:1.6}
+
+/* ── SERVICE AREAS ── */
+.areas-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.area-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+.area-item{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 16px;font-size:0.875rem;color:var(--text);box-shadow:var(--shadow)}
+.area-icon{width:8px;height:8px;border-radius:50%;background:var(--accent);min-width:8px}
+.map-embed{border-radius:14px;overflow:hidden;box-shadow:var(--shadow-md);border:1px solid var(--border);height:340px;background:var(--card);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px}
+.map-embed svg{width:44px;height:44px;stroke:var(--accent);fill:none;stroke-width:1.5;opacity:.4}
+.map-embed p{font-size:0.82rem;color:var(--muted);text-align:center}
+.map-embed a{color:var(--accent);font-size:0.85rem;font-weight:600;margin-top:4px}
+
+/* ── CONTACT ── */
+.contact-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:48px;align-items:start}
+.contact-info p{color:var(--muted);font-size:0.975rem;line-height:1.8;margin-bottom:28px}
+.cinfo-item{display:flex;align-items:flex-start;gap:14px;margin-bottom:18px}
+.cinfo-icon{width:40px;height:40px;min-width:40px;background:var(--accent-light);border-radius:10px;display:flex;align-items:center;justify-content:center}
+.cinfo-icon svg{width:18px;height:18px;stroke:var(--accent);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.cinfo-label{font-size:0.78rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-bottom:2px}
+.cinfo-val{font-size:0.925rem;color:var(--text);font-weight:500}
+.hours-box{background:var(--accent-light);border:1px solid var(--border2);border-radius:12px;padding:18px 20px;margin-top:24px}
+.hours-box h4{font-size:0.85rem;font-weight:700;color:var(--accent);margin-bottom:10px}
+.hours-box p{font-size:0.825rem;color:var(--muted);margin-bottom:4px}
+.form-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:32px;box-shadow:var(--shadow)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{margin-bottom:16px}
+.field label{display:block;font-size:0.78rem;font-weight:600;color:var(--muted);margin-bottom:6px;letter-spacing:.03em;text-transform:uppercase}
+.field input,.field select,.field textarea{width:100%;background:var(--bg3);border:1.5px solid var(--border);border-radius:8px;color:var(--text);padding:11px 14px;font-size:0.9rem;font-family:'Inter',sans-serif;transition:border-color .2s;outline:none}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--accent);background:var(--bg2)}
+.field textarea{resize:vertical;min-height:110px}
+.field select option{background:var(--bg2);color:var(--text)}
+.form-submit{width:100%;background:var(--accent);color:#fff;border:none;border-radius:9px;padding:14px;font-size:0.975rem;font-weight:600;cursor:pointer;font-family:'Outfit',sans-serif;transition:background .2s,transform .15s;box-shadow:0 4px 20px rgba(45,124,246,0.3)}
+.form-submit:hover{background:#1a63d6;transform:translateY(-1px)}
+.form-submit:disabled{background:#334155;cursor:not-allowed;transform:none;box-shadow:none}
+.form-success{display:none;text-align:center;padding:36px 16px}
+.form-success .tick{width:56px;height:56px;background:var(--accent-light);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
+.form-success .tick svg{width:26px;height:26px;stroke:var(--accent);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.form-success h3{font-family:'Outfit',sans-serif;font-size:1.1rem;font-weight:700;margin-bottom:8px;color:#fff}
+.form-success p{color:var(--muted);font-size:0.875rem}
+.form-error{display:none;background:rgba(220,38,38,0.1);border:1px solid rgba(220,38,38,0.3);border-radius:8px;padding:12px 16px;margin-bottom:16px;color:#f87171;font-size:0.875rem}
+
+/* ── FOOTER ── */
+footer{background:var(--bg2);border-top:1px solid var(--border);color:var(--muted);padding:48px 24px 28px}
+.footer-inner{max-width:1160px;margin:0 auto}
+.footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:48px;margin-bottom:40px}
+.footer-brand .logo-text{color:#fff;font-size:1.1rem}
+.footer-brand p{color:var(--muted);font-size:0.875rem;line-height:1.75;margin-top:12px;max-width:260px}
+.footer-col h4{font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:700;color:#fff;margin-bottom:14px}
+.footer-col ul{list-style:none}
+.footer-col ul li{margin-bottom:8px}
+.footer-col ul li a{color:var(--muted);font-size:0.85rem;transition:color .2s}
+.footer-col ul li a:hover{color:var(--accent)}
+.footer-col p{font-size:0.85rem;line-height:1.7;margin-bottom:6px}
+.footer-bottom{border-top:1px solid var(--border);padding-top:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-bottom p{font-size:0.8rem;color:#3d5070}
+
+/* ── FADE ── */
+.fade{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}
+.fade.visible{opacity:1;transform:none}
+
+/* ── RESPONSIVE ── */
+@media(max-width:960px){
+  .hero-inner{grid-template-columns:1fr;text-align:center}
+  .hero-sub{margin:0 auto 32px}
+  .hero-btns{justify-content:center}
+  .hero-visual{display:none}
+  .about-grid,.contact-grid,.areas-grid{grid-template-columns:1fr}
+  .about-img{height:240px}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .footer-top{grid-template-columns:1fr 1fr}
+}
+@media(max-width:680px){
+  .nav-links,.nav-cta,.lang-toggle{display:none}
+  .hamburger{display:flex}
+  .svc-grid{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  .mid-cta{padding:32px 24px;text-align:center;justify-content:center}
+  .area-list{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header>
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <div class="logo-text">Ac-Dc <span>Security</span></div>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about" data-en="About" data-el="Σχετικά">About</a></li>
+        <li><a href="#services" data-en="Services" data-el="Υπηρεσίες">Services</a></li>
+        <li><a href="#gallery" data-en="Projects" data-el="Έργα">Projects</a></li>
+        <li><a href="#areas" data-en="Areas" data-el="Περιοχές">Areas</a></li>
+        <li><a href="#contact" data-en="Contact" data-el="Επικοινωνία">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <div class="lang-toggle">
+        <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" id="btn-el" onclick="setLang('el')">ΕΛ</button>
+      </div>
+      <a href="#contact" class="nav-cta" data-en="Request a Quote" data-el="Ζητήστε Προσφορά">Request a Quote</a>
+    </div>
+    <button class="hamburger" id="ham" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mob-nav">
+    <div class="mobile-lang">
+      <button class="lang-btn active" id="mob-btn-en" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" id="mob-btn-el" onclick="setLang('el')">ΕΛ</button>
+    </div>
+    <a href="#about" data-en="About" data-el="Σχετικά">About</a>
+    <a href="#services" data-en="Services" data-el="Υπηρεσίες">Services</a>
+    <a href="#gallery" data-en="Projects" data-el="Έργα">Projects</a>
+    <a href="#areas" data-en="Areas" data-el="Περιοχές">Areas</a>
+    <a href="#contact" data-en="Contact" data-el="Επικοινωνία">Contact</a>
+    <a href="#contact" class="nav-cta" data-en="Request a Quote" data-el="Ζητήστε Προσφορά">Request a Quote</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero bg-dark">
+  <div class="hero-inner wrap">
+    <div class="hero-content fade">
+      <div class="hero-badge"><span class="badge-dot"></span><span data-en="Based in Tympaki, Crete" data-el="Βασισμένοι στο Τυμπάκι, Κρήτη">Based in Tympaki, Crete</span></div>
+      <h1><span data-en="Your security," data-el="Η ασφάλειά σας,">Your security,</span><br><span data-en="our expertise." data-el="η εμπειρία μας.">our <span style="color:var(--accent)">expertise.</span></span></h1>
+      <p class="hero-sub" data-en="Professional security systems, CCTV, access control, and technical solutions for homes and businesses across Crete. Installed right. Supported long-term." data-el="Επαγγελματικά συστήματα ασφαλείας, CCTV, έλεγχος πρόσβασης και τεχνικές λύσεις για κατοικίες και επιχειρήσεις σε όλη την Κρήτη. Σωστή εγκατάσταση. Μακροχρόνια υποστήριξη.">Professional security systems, CCTV, access control, and technical solutions for homes and businesses across Crete. Installed right. Supported long-term.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn" data-en="Request a Quote" data-el="Ζητήστε Προσφορά">Request a Quote</a>
+        <a href="#services" class="btn btn-outline" data-en="View Services" data-el="Δείτε Υπηρεσίες">View Services</a>
+      </div>
+      <div class="hero-stats" style="margin-top:36px">
+        <div class="hstat"><div class="hstat-num">200+</div><div class="hstat-lbl" data-en="Projects" data-el="Έργα">Projects</div></div>
+        <div class="hstat"><div class="hstat-num">10+</div><div class="hstat-lbl" data-en="Years" data-el="Χρόνια">Years</div></div>
+        <div class="hstat"><div class="hstat-num" data-en="Crete" data-el="Κρήτη">Crete</div><div class="hstat-lbl" data-en="Wide" data-el="Πανελλαδικά">Wide</div></div>
+      </div>
+    </div>
+    <div class="hero-visual fade">
+      <div class="hero-card-main">
+        <div class="hero-img-placeholder" style="padding:0">
+          <img src="hero.jpg" alt="Ac-Dc Security Systems" style="width:100%;height:100%;object-fit:cover" onerror="this.style.display='none'">
+        </div>
+        <div class="hero-card-body">
+          <h3 data-en="Complete Security Solutions" data-el="Ολοκληρωμένες Λύσεις Ασφαλείας">Complete Security Solutions</h3>
+          <p>Tympaki · Heraklion · All of Crete</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="bg-dark2">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-img fade" style="padding:0">
+        <img src="team.jpg" alt="Our team" style="width:100%;height:100%;object-fit:cover" onerror="this.style.display='none';this.parentElement.innerHTML='<svg viewBox=&quot;0 0 24 24&quot; style=&quot;width:56px;height:56px;stroke:var(--accent);fill:none;stroke-width:1.5;opacity:.4&quot;><path d=&quot;M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z&quot;/></svg>'">
+      </div>
+      <div class="about-text fade">
+        <div class="sec-tag" data-en="Who We Are" data-el="Ποιοι Είμαστε">Who We Are</div>
+        <h2 data-en="Local experts you can rely on" data-el="Τοπικοί ειδικοί που μπορείτε να εμπιστευτείτε">Local experts you can rely on</h2>
+        <p data-en="Ac-Dc Security Systems is a professional security and technology company based in Tympaki, Heraklion, Crete. We specialise in designing, installing, and maintaining complete security solutions for residential and commercial clients." data-el="Η Ac-Dc Security Systems είναι επαγγελματική εταιρεία ασφαλείας και τεχνολογίας με έδρα το Τυμπάκι Ηρακλείου Κρήτης. Ειδικευόμαστε στο σχεδιασμό, εγκατάσταση και συντήρηση ολοκληρωμένων συστημάτων ασφαλείας για οικιακούς και επαγγελματικούς πελάτες.">Ac-Dc Security Systems is a professional security and technology company based in Tympaki, Heraklion, Crete. We specialise in designing, installing, and maintaining complete security solutions for residential and commercial clients.</p>
+        <p data-en="With years of hands-on experience across Crete, we combine technical expertise with a genuine commitment to quality. Every system we install is tailored to the specific needs of the site — no off-the-shelf solutions, no shortcuts." data-el="Με χρόνια πρακτικής εμπειρίας σε όλη την Κρήτη, συνδυάζουμε τεχνική εξειδίκευση με ειλικρινή δέσμευση στην ποιότητα. Κάθε σύστημα που εγκαθιστούμε προσαρμόζεται στις ανάγκες του χώρου — καμία τυποποιημένη λύση, κανένας συμβιβασμός.">With years of hands-on experience across Crete, we combine technical expertise with a genuine commitment to quality. Every system we install is tailored to the specific needs of the site — no off-the-shelf solutions, no shortcuts.</p>
+        <p data-en="From a single camera to a full building fit-out, we handle the entire project ourselves — from initial assessment through to long-term support." data-el="Από μια κάμερα έως πλήρη εξοπλισμό κτιρίου, αναλαμβάνουμε ολόκληρο το έργο — από την αρχική αξιολόγηση έως τη μακροχρόνια υποστήριξη.">From a single camera to a full building fit-out, we handle the entire project ourselves — from initial assessment through to long-term support.</p>
+        <div class="about-chips">
+          <div class="chip"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span data-en="In-house team" data-el="Εσωτερική ομάδα">In-house team</span></div>
+          <div class="chip"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span data-en="Based in Crete" data-el="Έδρα στην Κρήτη">Based in Crete</span></div>
+          <div class="chip"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span data-en="Licensed & certified" data-el="Αδειοδοτημένοι & πιστοποιημένοι">Licensed & certified</span></div>
+          <div class="chip"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span data-en="Ongoing support" data-el="Συνεχής υποστήριξη">Ongoing support</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="bg-dark">
+  <div class="wrap">
+    <div class="sec-tag fade" data-en="What We Do" data-el="Τι Κάνουμε">What We Do</div>
+    <h2 class="fade" data-en="Our Services" data-el="Οι Υπηρεσίες Μας">Our Services</h2>
+    <p class="sec-sub fade" data-en="From alarm systems to structured networks — we provide complete, reliable security and low-voltage technical solutions across Crete." data-el="Από συστήματα συναγερμού έως δομημένα δίκτυα — παρέχουμε πλήρεις, αξιόπιστες λύσεις ασφαλείας σε όλη την Κρήτη.">From alarm systems to structured networks — we provide complete, reliable security and low-voltage technical solutions across Crete.</p>
+    <div class="svc-grid">
+      <div class="svc fade">
+        <div class="svc-top"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3 data-en="Alarm Systems" data-el="Συστήματα Συναγερμού">Alarm Systems</h3>
+        <p data-en="Professional installation and maintenance of wired and wireless alarm systems for homes, apartments, offices, and commercial properties." data-el="Επαγγελματική εγκατάσταση και συντήρηση ενσύρματων και ασύρματων συναγερμών για κατοικίες, διαμερίσματα, γραφεία και επαγγελματικούς χώρους.">Professional installation and maintenance of wired and wireless alarm systems for homes, apartments, offices, and commercial properties.</p>
+        <span class="svc-tag" data-en="Installation & Maintenance" data-el="Εγκατάσταση & Συντήρηση">Installation & Maintenance</span>
+      </div>
+      <div class="svc fade">
+        <div class="svc-top"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/></svg></div>
+        <h3 data-en="Security Cameras / CCTV" data-el="Κάμερες Ασφαλείας / CCTV">Security Cameras / CCTV</h3>
+        <p data-en="Complete CCTV systems with professional camera placement, DVR/NVR configuration, remote access setup, and ongoing optimisation." data-el="Πλήρη συστήματα CCTV με επαγγελματική τοποθέτηση κάμερας, ρύθμιση DVR/NVR, απομακρυσμένη πρόσβαση και συνεχή βελτιστοποίηση.">Complete CCTV systems with professional camera placement, DVR/NVR configuration, remote access setup, and ongoing optimisation.</p>
+        <span class="svc-tag" data-en="IP & Analogue Systems" data-el="IP & Αναλογικά Συστήματα">IP & Analogue Systems</span>
+      </div>
+      <div class="svc fade">
+        <div class="svc-top"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+        <h3 data-en="Access Control" data-el="Έλεγχος Πρόσβασης">Access Control</h3>
+        <p data-en="Secure, flexible access control for apartments, offices, warehouses, and commercial buildings. Key fob, PIN, card, and biometric systems." data-el="Ασφαλής, ευέλικτος έλεγχος πρόσβασης για διαμερίσματα, γραφεία, αποθήκες και επαγγελματικά κτίρια. Κάρτες, PIN, βιομετρικά και key fob.">Secure, flexible access control for apartments, offices, warehouses, and commercial buildings. Key fob, PIN, card, and biometric systems.</p>
+        <span class="svc-tag" data-en="All Building Types" data-el="Όλα τα Κτίρια">All Building Types</span>
+      </div>
+      <div class="svc fade">
+        <div class="svc-top"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.16 12 19.79 19.79 0 0 1 1.07 3.4 2 2 0 0 1 3.05 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 5.8 5.8l1.28-1.28a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <h3 data-en="Intercom Systems" data-el="Συστήματα Θυροτηλεόρασης">Intercom Systems</h3>
+        <p data-en="Audio and video intercom solutions for residential and commercial applications. Integrated with access control for complete entry management." data-el="Λύσεις θυροτηλεόρασης ήχου και εικόνας για οικιακές και επαγγελματικές εφαρμογές. Ενσωμάτωση με έλεγχο πρόσβασης για πλήρη διαχείριση εισόδου.">Audio and video intercom solutions for residential and commercial applications. Integrated with access control for complete entry management.</p>
+        <span class="svc-tag" data-en="Audio & Video" data-el="Ήχος & Εικόνα">Audio & Video</span>
+      </div>
+      <div class="svc fade">
+        <div class="svc-top"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></div>
+        <h3 data-en="Networks & Technical Solutions" data-el="Δίκτυα & Τεχνικές Λύσεις">Networks & Technical Solutions</h3>
+        <p data-en="Structured cabling, network infrastructure, and low-voltage technical installations for security systems, communications, and future needs." data-el="Δομημένη καλωδίωση, υποδομή δικτύου και εγκαταστάσεις χαμηλής τάσης για συστήματα ασφαλείας, επικοινωνίες και μελλοντικές ανάγκες.">Structured cabling, network infrastructure, and low-voltage technical installations for security systems, communications, and future needs.</p>
+        <span class="svc-tag" data-en="Structured Cabling & LAN" data-el="Δομημένη Καλωδίωση & LAN">Structured Cabling & LAN</span>
+      </div>
+      <div class="svc fade">
+        <div class="svc-top"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+        <h3 data-en="Technical Support & Maintenance" data-el="Τεχνική Υποστήριξη & Συντήρηση">Technical Support & Maintenance</h3>
+        <p data-en="Regular maintenance contracts, fault diagnosis, system upgrades, and emergency call-out. We support everything we install." data-el="Τακτικά συμβόλαια συντήρησης, διάγνωση βλαβών, αναβαθμίσεις συστημάτων και επείγουσα εξυπηρέτηση. Υποστηρίζουμε ό,τι εγκαθιστούμε.">Regular maintenance contracts, fault diagnosis, system upgrades, and emergency call-out. We support everything we install.</p>
+        <span class="svc-tag" data-en="Ongoing Support" data-el="Συνεχής Υποστήριξη">Ongoing Support</span>
+      </div>
+    </div>
+    <div class="mid-cta fade">
+      <div>
+        <h3 data-en="Not sure what you need?" data-el="Δεν ξέρετε τι χρειάζεστε;">Not sure what you need?</h3>
+        <p data-en="We'll visit your site, assess your requirements, and recommend the right solution — with no obligation and honest advice." data-el="Θα επισκεφτούμε τον χώρο σας, θα αξιολογήσουμε τις ανάγκες σας και θα προτείνουμε τη σωστή λύση — χωρίς δέσμευση και με ειλικρινή συμβουλή.">We'll visit your site, assess your requirements, and recommend the right solution — with no obligation and honest advice.</p>
+      </div>
+      <a href="#contact" class="btn btn-white" data-en="Book a Free Assessment" data-el="Κλείστε Δωρεάν Αξιολόγηση">Book a Free Assessment</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section id="why" class="bg-dark2">
+  <div class="wrap">
+    <div class="sec-tag fade" data-en="Why Choose Us" data-el="Γιατί Εμάς">Why Choose Us</div>
+    <h2 class="fade" data-en="What sets us apart" data-el="Τι μας ξεχωρίζει">What sets us apart</h2>
+    <p class="sec-sub fade" data-en="We combine technical expertise with a personal, reliable service that larger companies simply can't offer." data-el="Συνδυάζουμε τεχνική εξειδίκευση με προσωπική, αξιόπιστη εξυπηρέτηση που οι μεγαλύτερες εταιρείες απλά δεν μπορούν να προσφέρουν.">We combine technical expertise with a personal, reliable service that larger companies simply can't offer.</p>
+    <div class="why-grid">
+      <div class="why-card fade">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <h4 data-en="Professional Service" data-el="Επαγγελματική Εξυπηρέτηση">Professional Service</h4>
+        <p data-en="Clean, tidy installations carried out to a high standard on every project, large or small." data-el="Καθαρές, τακτοποιημένες εγκαταστάσεις σε υψηλό επίπεδο σε κάθε έργο, μεγάλο ή μικρό.">Clean, tidy installations carried out to a high standard on every project, large or small.</p>
+      </div>
+      <div class="why-card fade">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h4 data-en="Reliability" data-el="Αξιοπιστία">Reliability</h4>
+        <p data-en="We do what we say, when we say. No surprises on pricing, timeline, or quality of work." data-el="Κάνουμε αυτό που λέμε, όταν το λέμε. Καμία έκπληξη στην τιμή, στο χρόνο ή στην ποιότητα εργασίας.">We do what we say, when we say. No surprises on pricing, timeline, or quality of work.</p>
+      </div>
+      <div class="why-card fade">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <h4 data-en="Fast Response" data-el="Γρήγορη Ανταπόκριση">Fast Response</h4>
+        <p data-en="Quick response times for both new installations and support calls — we understand that security can't wait." data-el="Γρήγοροι χρόνοι ανταπόκρισης για νέες εγκαταστάσεις και κλήσεις υποστήριξης — η ασφάλεια δεν περιμένει.">Quick response times for both new installations and support calls — we understand that security can't wait.</p>
+      </div>
+      <div class="why-card fade">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+        <h4 data-en="Modern Solutions" data-el="Σύγχρονες Λύσεις">Modern Solutions</h4>
+        <p data-en="Up-to-date systems with remote access, smart integration, and future-ready infrastructure." data-el="Σύγχρονα συστήματα με απομακρυσμένη πρόσβαση, έξυπνη ενσωμάτωση και μελλοντική υποδομή.">Up-to-date systems with remote access, smart integration, and future-ready infrastructure.</p>
+      </div>
+      <div class="why-card fade">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+        <h4 data-en="Technical Experience" data-el="Τεχνική Εμπειρία">Technical Experience</h4>
+        <p data-en="Years of hands-on experience across diverse sites — residential, commercial, and industrial." data-el="Χρόνια πρακτικής εμπειρίας σε διάφορους χώρους — οικιακούς, εμπορικούς και βιομηχανικούς.">Years of hands-on experience across diverse sites — residential, commercial, and industrial.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="bg-dark">
+  <div class="wrap">
+    <div class="sec-tag fade" data-en="Our Work" data-el="Οι Εργασίες Μας">Our Work</div>
+    <h2 class="fade" data-en="Projects & Gallery" data-el="Έργα & Γκαλερί">Projects & Gallery</h2>
+    <p class="sec-sub fade" data-en="A selection of completed installations from real projects across Crete." data-el="Μια επιλογή ολοκληρωμένων εγκαταστάσεων από πραγματικά έργα σε όλη την Κρήτη.">A selection of completed installations from real projects across Crete.</p>
+    <div class="gallery-grid">
+      <div class="gallery-item fade">
+        <div class="gallery-img has-photo">
+          <img src="photo8.jpg" alt="Alarm panel and motion sensor" onerror="this.parentElement.classList.remove('has-photo');this.style.display='none'">
+        </div>
+        <div class="gallery-caption">
+          <h4 data-en="Alarm System — Ready for Installation" data-el="Συναγερμός — Έτοιμος για Εγκατάσταση">Alarm System — Ready for Installation</h4>
+          <p data-en="Alarm control panel with PIR motion sensor — fully programmed and tested before handover." data-el="Κεντρική μονάδα συναγερμού με ανιχνευτή κίνησης PIR — πλήρως προγραμματισμένη και δοκιμασμένη.">Alarm control panel with PIR motion sensor — fully programmed and tested before handover.</p>
+        </div>
+      </div>
+      <div class="gallery-item fade">
+        <div class="gallery-img has-photo">
+          <img src="photo6.jpg" alt="CCTV camera installed on commercial building exterior" onerror="this.parentElement.classList.remove('has-photo');this.style.display='none'">
+        </div>
+        <div class="gallery-caption">
+          <h4 data-en="Outdoor CCTV — Commercial Property" data-el="Εξωτερική CCTV — Εμπορικό Κτίριο">Outdoor CCTV — Commercial Property</h4>
+          <p data-en="Ac-Dc branded bullet camera installed on a commercial building exterior for maximum coverage." data-el="Κάμερα bullet της Ac-Dc σε εξωτερικό εμπορικού κτιρίου — τοποθετημένη για μέγιστη κάλυψη.">Ac-Dc branded bullet camera installed on a commercial building exterior for maximum coverage.</p>
+        </div>
+      </div>
+      <div class="gallery-item fade">
+        <div class="gallery-img has-photo">
+          <img src="photo7.jpg" alt="Triple camera installation on pole" onerror="this.parentElement.classList.remove('has-photo');this.style.display='none'">
+        </div>
+        <div class="gallery-caption">
+          <h4 data-en="Multi-Camera Pole Installation" data-el="Εγκατάσταση Πολλών Καμερών σε Κολόνα">Multi-Camera Pole Installation</h4>
+          <p data-en="Three-camera Avision system on a single pole — complete 360° outdoor surveillance for a commercial site." data-el="Σύστημα Avision τριών καμερών σε μία κολόνα — πλήρης εξωτερική επιτήρηση 360°.">Three-camera Avision system on a single pole — complete 360° outdoor surveillance for a commercial site.</p>
+        </div>
+      </div>
+      <div class="gallery-item fade">
+        <div class="gallery-img has-photo">
+          <img src="photo2.jpg" alt="CCTV cameras prepared for installation" onerror="this.parentElement.classList.remove('has-photo');this.style.display='none'">
+        </div>
+        <div class="gallery-caption">
+          <h4 data-en="CCTV System — Pre-Installation" data-el="Σύστημα CCTV — Πριν την Εγκατάσταση">CCTV System — Pre-Installation</h4>
+          <p data-en="A full set of bullet cameras prepared and cabled, ready for a multi-camera CCTV installation." data-el="Πλήρες σετ καμερών bullet έτοιμο και καλωδιωμένο για εγκατάσταση CCTV πολλαπλών καμερών.">A full set of bullet cameras prepared and cabled, ready for a multi-camera CCTV installation.</p>
+        </div>
+      </div>
+      <div class="gallery-item fade">
+        <div class="gallery-img has-photo">
+          <img src="photo1.jpg" alt="Ac-Dc store display with wireless camera and live monitors" onerror="this.parentElement.classList.remove('has-photo');this.style.display='none'">
+        </div>
+        <div class="gallery-caption">
+          <h4 data-en="Showroom — Live Demonstration" data-el="Εκθεσιακός Χώρος — Ζωντανή Επίδειξη">Showroom — Live Demonstration</h4>
+          <p data-en="Our Tympaki store with live CCTV demonstration monitors and wireless camera systems on display." data-el="Το κατάστημά μας στο Τυμπάκι με ζωντανές οθόνες επίδειξης CCTV και ασύρματα συστήματα.">Our Tympaki store with live CCTV demonstration monitors and wireless camera systems on display.</p>
+        </div>
+      </div>
+      <div class="gallery-item fade">
+        <div class="gallery-img has-photo">
+          <img src="photo5.jpg" alt="Satel alarm panel and CCTV camera products" onerror="this.parentElement.classList.remove('has-photo');this.style.display='none'">
+        </div>
+        <div class="gallery-caption">
+          <h4 data-en="Alarm & CCTV Systems" data-el="Συστήματα Συναγερμού & CCTV">Alarm & CCTV Systems</h4>
+          <p data-en="Professional-grade equipment from trusted brands including Satel, Ajax, ALiVe, and Avision." data-el="Επαγγελματικός εξοπλισμός από αξιόπιστες μάρκες όπως Satel, Ajax, ALiVe και Avision.">Professional-grade equipment from trusted brands including Satel, Ajax, ALiVe, and Avision.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREAS -->
+<section id="areas" class="bg-dark2">
+  <div class="wrap">
+    <div class="areas-grid">
+      <div class="fade">
+        <div class="sec-tag" data-en="Where We Work" data-el="Πού Εργαζόμαστε">Where We Work</div>
+        <h2 data-en="Service Areas" data-el="Περιοχές Εξυπηρέτησης">Service Areas</h2>
+        <p style="color:var(--muted);font-size:.975rem;line-height:1.8;margin-bottom:20px" data-en="Based in Tympaki, we serve clients across Heraklion and the wider Crete region. Whether you're in the centre of Heraklion or a more remote location, we'll come to you." data-el="Με έδρα το Τυμπάκι, εξυπηρετούμε πελάτες σε όλο το Ηράκλειο και την ευρύτερη Κρήτη. Είτε βρίσκεστε στο κέντρο του Ηρακλείου είτε σε πιο απομακρυσμένη τοποθεσία, θα έρθουμε εμείς.">Based in Tympaki, we serve clients across Heraklion and the wider Crete region. Whether you're in the centre of Heraklion or a more remote location, we'll come to you.</p>
+        <div class="area-list">
+          <div class="area-item"><div class="area-icon"></div><span data-en="Tympaki (base)" data-el="Τυμπάκι (έδρα)">Tympaki (base)</span></div>
+          <div class="area-item"><div class="area-icon"></div><span data-en="Heraklion" data-el="Ηράκλειο">Heraklion</span></div>
+          <div class="area-item"><div class="area-icon"></div><span data-en="Mires" data-el="Μοίρες">Mires</span></div>
+          <div class="area-item"><div class="area-icon"></div><span data-en="Agia Varvara" data-el="Αγία Βαρβάρα">Agia Varvara</span></div>
+          <div class="area-item"><div class="area-icon"></div><span data-en="Matala" data-el="Μάταλα">Matala</span></div>
+          <div class="area-item"><div class="area-icon"></div><span data-en="Rethymno" data-el="Ρέθυμνο">Rethymno</span></div>
+          <div class="area-item"><div class="area-icon"></div><span data-en="Messara Valley" data-el="Κοιλάδα Μεσσαράς">Messara Valley</span></div>
+          <div class="area-item"><div class="area-icon"></div><span data-en="All of Crete" data-el="Όλη η Κρήτη">All of Crete</span></div>
+        </div>
+      </div>
+      <div class="map-embed fade">
+        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <p data-en="Tympaki, Heraklion, Crete<br>Postcode: 70200" data-el="Τυμπάκι, Ηράκλειο, Κρήτη<br>ΤΚ: 70200">Tympaki, Heraklion, Crete<br>Postcode: 70200</p>
+        <a href="https://maps.google.com/?q=Tympaki,Heraklion,Crete,Greece" target="_blank" rel="noopener noreferrer" data-en="View on Google Maps →" data-el="Δείτε στο Google Maps →">View on Google Maps →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="bg-dark">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="fade">
+        <div class="sec-tag" data-en="Get in Touch" data-el="Επικοινωνήστε">Get in Touch</div>
+        <h2 data-en="Let's discuss your project" data-el="Ας συζητήσουμε το έργο σας">Let's discuss your project</h2>
+        <p data-en="Whether you need a new installation, a system upgrade, or ongoing maintenance — we're happy to advise and provide a no-obligation quote." data-el="Είτε χρειάζεστε νέα εγκατάσταση, αναβάθμιση συστήματος ή συντήρηση — χαρούμενοι να συμβουλεύσουμε και να προσφέρουμε προσφορά χωρίς δέσμευση.">Whether you need a new installation, a system upgrade, or ongoing maintenance — we're happy to advise and provide a no-obligation quote.</p>
+        <div class="cinfo-item">
+          <div class="cinfo-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.16 12 19.79 19.79 0 0 1 1.07 3.4 2 2 0 0 1 3.05 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 5.8 5.8l1.28-1.28a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div><div class="cinfo-label" data-en="Phone" data-el="Τηλέφωνο">Phone</div><div class="cinfo-val">+30 698 921 9147</div></div>
+        </div>
+        <div class="cinfo-item">
+          <div class="cinfo-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div><div class="cinfo-label" data-en="Email" data-el="Email">Email</div><div class="cinfo-val">manoskallionakis@yahoo.gr</div></div>
+        </div>
+        <div class="cinfo-item">
+          <div class="cinfo-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><div class="cinfo-label" data-en="Location" data-el="Τοποθεσία">Location</div><div class="cinfo-val" data-en="Tympaki, Heraklion, Crete 70200" data-el="Τυμπάκι, Ηράκλειο, Κρήτη 70200">Tympaki, Heraklion, Crete 70200</div></div>
+        </div>
+        <div class="hours-box">
+          <h4 data-en="Working Hours" data-el="Ώρες Λειτουργίας">Working Hours</h4>
+          <p data-en="Monday – Friday: 08:00 – 18:00" data-el="Δευτέρα – Παρασκευή: 08:00 – 18:00">Monday – Friday: 08:00 – 18:00</p>
+          <p data-en="Saturday: 09:00 – 14:00" data-el="Σάββατο: 09:00 – 14:00">Saturday: 09:00 – 14:00</p>
+          <p data-en="Emergency support available outside hours" data-el="Επείγουσα υποστήριξη εκτός ωραρίου">Emergency support available outside hours</p>
+        </div>
+      </div>
+      <div class="fade">
+        <div class="form-card">
+          <div id="form-wrap">
+            <div class="form-error" id="form-error" data-en="Something went wrong. Please try again or call us directly." data-el="Κάτι πήγε στραβά. Δοκιμάστε ξανά ή καλέστε μας απευθείας.">Something went wrong. Please try again or call us directly.</div>
+            <form id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="field"><label data-en="First Name *" data-el="Όνομα *">First Name *</label><input type="text" name="first_name" placeholder="Γιώργος" required></div>
+                <div class="field"><label data-en="Last Name *" data-el="Επώνυμο *">Last Name *</label><input type="text" name="last_name" placeholder="Παπαδάκης" required></div>
+              </div>
+              <div class="field"><label data-en="Phone *" data-el="Τηλέφωνο *">Phone *</label><input type="tel" name="phone" placeholder="+30 6XX XXX XXXX" required></div>
+              <div class="field"><label data-en="Email *" data-el="Email *">Email *</label><input type="email" name="email" placeholder="your@email.com" required></div>
+              <div class="field">
+                <label data-en="Service Required *" data-el="Υπηρεσία *">Service Required *</label>
+                <select name="service" required>
+                  <option value="" disabled selected data-en="Select a service..." data-el="Επιλέξτε υπηρεσία...">Select a service...</option>
+                  <option data-en="Alarm System" data-el="Συναγερμός">Alarm System</option>
+                  <option data-en="CCTV / Security Cameras" data-el="CCTV / Κάμερες Ασφαλείας">CCTV / Security Cameras</option>
+                  <option data-en="Access Control" data-el="Έλεγχος Πρόσβασης">Access Control</option>
+                  <option data-en="Intercom System" data-el="Θυροτηλεόραση">Intercom System</option>
+                  <option data-en="Network & Cabling" data-el="Δίκτυο & Καλωδίωση">Network & Cabling</option>
+                  <option data-en="Technical Support / Maintenance" data-el="Τεχνική Υποστήριξη / Συντήρηση">Technical Support / Maintenance</option>
+                  <option data-en="Not sure yet" data-el="Δεν ξέρω ακόμα">Not sure yet</option>
+                </select>
+              </div>
+              <div class="field"><label data-en="Tell us about your project *" data-el="Περιγράψτε το έργο σας *">Tell us about your project *</label><textarea name="message" placeholder="..." required></textarea></div>
+              <button type="submit" class="form-submit" id="submit-btn" data-en="Send Enquiry" data-el="Αποστολή Αιτήματος">Send Enquiry</button>
+            </form>
+          </div>
+          <div class="form-success" id="form-success">
+            <div class="tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <h3 data-en="Enquiry received!" data-el="Το αίτημά σας ελήφθη!">Enquiry received!</h3>
+            <p data-en="Thank you for getting in touch. We'll respond within one business day." data-el="Ευχαριστούμε που επικοινωνήσατε. Θα απαντήσουμε εντός μιας εργάσιμης ημέρας.">Thank you for getting in touch. We'll respond within one business day.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo-text">Ac-Dc <span style="color:var(--accent)">Security Systems</span></div>
+        <p data-en="Professional security systems, CCTV, access control, and technical solutions across Crete, Greece. Based in Tympaki, Heraklion." data-el="Επαγγελματικά συστήματα ασφαλείας, CCTV, έλεγχος πρόσβασης και τεχνικές λύσεις σε όλη την Κρήτη. Έδρα: Τυμπάκι, Ηράκλειο.">Professional security systems, CCTV, access control, and technical solutions across Crete, Greece. Based in Tympaki, Heraklion.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Services" data-el="Υπηρεσίες">Services</h4>
+        <ul>
+          <li><a href="#services" data-en="Alarm Systems" data-el="Συναγερμοί">Alarm Systems</a></li>
+          <li><a href="#services" data-en="CCTV & Cameras" data-el="CCTV & Κάμερες">CCTV & Cameras</a></li>
+          <li><a href="#services" data-en="Access Control" data-el="Έλεγχος Πρόσβασης">Access Control</a></li>
+          <li><a href="#services" data-en="Intercom Systems" data-el="Θυροτηλεοράσεις">Intercom Systems</a></li>
+          <li><a href="#services" data-en="Networks & Cabling" data-el="Δίκτυα & Καλωδίωση">Networks & Cabling</a></li>
+          <li><a href="#services" data-en="Technical Support" data-el="Τεχνική Υποστήριξη">Technical Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Contact" data-el="Επικοινωνία">Contact</h4>
+        <p>📞 +30 698 921 9147</p>
+        <p>✉️ manoskallionakis@yahoo.gr</p>
+        <p data-en="📍 Tympaki, Heraklion" data-el="📍 Τυμπάκι, Ηράκλειο">📍 Tympaki, Heraklion</p>
+        <p data-en="Crete, Greece 70200" data-el="Κρήτη, Ελλάδα 70200">Crete, Greece 70200</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Ac-Dc Security Systems. <span data-en="All rights reserved." data-el="Όλα τα δικαιώματα διατηρούνται.">All rights reserved.</span></p>
+      <p data-en="Tympaki, Heraklion, Crete, Greece" data-el="Τυμπάκι, Ηράκλειο, Κρήτη, Ελλάδα">Tympaki, Heraklion, Crete, Greece</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ── LANGUAGE TOGGLE ── */
+let currentLang = 'en';
+
+function setLang(lang) {
+  currentLang = lang;
+  document.querySelectorAll('[data-en]').forEach(el => {
+    const val = el.getAttribute('data-' + lang);
+    if (!val) return;
+    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+      el.placeholder = val;
+    } else if (el.tagName === 'OPTION') {
+      el.textContent = val;
+    } else {
+      el.innerHTML = val;
+    }
+  });
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  document.getElementById('btn-el').classList.toggle('active', lang === 'el');
+  document.getElementById('mob-btn-en').classList.toggle('active', lang === 'en');
+  document.getElementById('mob-btn-el').classList.toggle('active', lang === 'el');
+  document.documentElement.lang = lang === 'el' ? 'el' : 'en';
+}
+
+/* ── HAMBURGER ── */
+const ham = document.getElementById('ham');
+const mob = document.getElementById('mob-nav');
+ham.addEventListener('click', () => {
+  const open = mob.style.display === 'flex';
+  mob.style.display = open ? 'none' : 'flex';
+  ham.classList.toggle('open', !open);
+});
+mob.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  mob.style.display = 'none';
+  ham.classList.remove('open');
+}));
+
+/* ── SCROLL FADE ── */
+const obs = new IntersectionObserver(els => els.forEach(e => {
+  if (e.isIntersecting) e.target.classList.add('visible');
+}), { threshold: 0.07 });
+document.querySelectorAll('.fade').forEach(el => obs.observe(el));
+
+/* ── CONTACT FORM ── */
+document.getElementById('contact-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const form = this;
+  const btn = document.getElementById('submit-btn');
+  const errBox = document.getElementById('form-error');
+
+  if (!form.checkValidity()) {
+    form.reportValidity();
+    return;
+  }
+
+  btn.textContent = currentLang === 'el' ? 'Αποστολή...' : 'Sending...';
+  btn.disabled = true;
+  errBox.style.display = 'none';
+
+  try {
+    const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+    if (res.ok) {
+      document.getElementById('form-wrap').style.display = 'none';
+      document.getElementById('form-success').style.display = 'block';
+    } else {
+      throw new Error();
+    }
+  } catch {
+    btn.textContent = currentLang === 'el' ? 'Αποστολή Αιτήματος' : 'Send Enquiry';
+    btn.disabled = false;
+    errBox.style.display = 'block';
+  }
+});
+</script>
+</body>
+</html>
